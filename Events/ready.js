@@ -1,9 +1,9 @@
 const Discord = require("discord.js")
-const loadSlashCommand = require("../Loader/loadSlashCommands")
+const loadSlashCommands = require("../Loader/loadSlashCommands.js")
 
 module.exports = async bot => {
 
-    await loadSlashCommand(bot)
+    await loadSlashCommands(bot)
 
     console.log(`${bot.user.tag} est en ligne !`)
 }
